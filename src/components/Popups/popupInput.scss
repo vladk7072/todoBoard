@@ -1,0 +1,97 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(#000000, 0.3);
+  padding: 15px;
+  &__wrapper {
+    max-width: 620px;
+    width: 100%;
+    background: #f8f0df;
+    border: 1px solid #9d9d9d;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+  }
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+    svg {
+      width: 20px;
+      height: 20px;
+      fill: #777;
+    }
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 19px;
+    color: #777777;
+    margin: 20px 0 30px;
+    &-limit {
+      font-size: 16px;
+      line-height: 19px;
+      color: #c30000;
+      margin-bottom: 20px;
+    }
+  }
+  &__form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &__textarea {
+    background: #fefbf3;
+    border: 1px solid #9d9d9d;
+    border-radius: 10px;
+    padding: 11px 15px;
+    width: 100%;
+    resize: vertical;
+    outline: transparent;
+    transition: all 0.2s;
+    &:focus {
+      border: 1px solid #363636;
+    }
+    &-limit {
+      border: 1px solid #c30000;
+      &:focus {
+        border: 1px solid #c30000;
+      }
+    }
+  }
+  &__btn {
+    background: #f8f0df;
+    border: 1px solid #9d9d9d;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+      background: #fefbf3;
+    }
+    &-load {
+      svg {
+        animation: btnload 1s infinite linear;
+      }
+    }
+    svg{
+      fill: #000;
+    }
+  }
+}
+@keyframes btnload {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

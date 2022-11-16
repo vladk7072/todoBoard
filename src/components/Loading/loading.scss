@@ -1,0 +1,23 @@
+.loading {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  &__text {
+    margin-right: 15px;
+    color: #545454;
+    font-size: 17px;
+    line-height: 21px;
+  }
+  svg {
+    width: 20px;
+    height: 20px;
+    path {
+      color: #545454;
+    }
+  }
+}
+@media (max-width: 350px) {
+  .loading {
+    padding: 20px 10px;
+  }
+}

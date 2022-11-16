@@ -1,0 +1,36 @@
+.added {
+  background-color: #f8f0df;
+  border-radius: 50px;
+  height: 42px;
+  width: 42px;
+  top: 25px;
+  right: 17px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 2px;
+    background-color: #777;
+    border-radius: 2px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 35%;
+    background-color: #777;
+    border-radius: 2px;
+  }
+  &:active {
+    background-color: transparent;
+  }
+  &-non {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

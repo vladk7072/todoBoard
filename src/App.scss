@@ -1,0 +1,63 @@
+@import "./normalize.css";
+.container {
+  max-width: 788px;
+  margin: 0 auto;
+  padding: 0 10px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.app {
+  background-color: #e5e5e5;
+  &__inner {
+    padding: 0 6px 0 0;
+    background-color: #fefbf3;
+    border: 1px solid #9d9d9d;
+    border-radius: 8px;
+    width: 100%;
+  }
+  &__wrapper {
+    min-width: 500px;
+    max-height: 500px;
+    position: relative;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+      margin-top: 105px;
+      margin-bottom: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #d8d8d8;
+      outline: 1px solid transparent;
+      border-radius: 10px;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .app {
+    &__wrapper {
+      min-width: 100%;
+    }
+  }
+}
+@media (max-width: 425px) {
+  .app {
+    &__wrapper {
+      &::-webkit-scrollbar {
+        width: 3px;
+      }
+      &::-webkit-scrollbar-track {
+        margin-top: 90px;
+        margin-bottom: 5px;
+      }
+    }
+    &__inner{
+      padding: 0 4px;
+    }
+  }
+}
