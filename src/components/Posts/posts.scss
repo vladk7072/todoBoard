@@ -86,7 +86,7 @@
     &-box {
       display: flex;
       align-items: center;
-      grid-gap: 14px;
+      grid-gap: 9px;
     }
   }
   &__post {
@@ -123,12 +123,12 @@
       }
     }
   }
-  &__edit{
+  &__edit {
     padding: 5px;
     display: flex;
     align-items: center;
     cursor: pointer;
-    svg{
+    svg {
       width: 18px;
       height: 18px;
     }
@@ -143,6 +143,11 @@
     &-pt {
       padding-top: 90px;
       padding-bottom: 15px;
+    }
+    &__text {
+      &-box {
+        grid-gap: 7px;
+      }
     }
     &__post {
       padding: 10px 5px 10px 10px;
