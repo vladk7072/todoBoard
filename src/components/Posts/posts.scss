@@ -34,7 +34,7 @@
           background-color: #19b500;
           top: 50%;
           left: 50px;
-          right: 85px;
+          right: 120px;
         }
       }
       .posts__info-box {
@@ -99,7 +99,7 @@
     position: relative;
     &::before {
       transition: all 0.2s;
-      background-color: #fff;
+      background-color: transparent;
     }
   }
   &__delete {
@@ -158,6 +158,7 @@
       .posts__post {
         &::before {
           left: 40px;
+          right: 112px;
         }
       }
     }
